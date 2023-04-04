@@ -1,7 +1,18 @@
+import Menu from "./components/Menu";
+import Navbar from "./components/Nav";
+
+import Cal from "./components/Cal";
+import Times from "./components/times";
+
 function App() {
   return (
-    <div className="bg-slate-900 py-2 text-white">
-      <h1 className="text-white"></h1>
+    <div className="App">
+      <div className="container mx-auto w-4/5 sm:w-2/3 ">
+        <Navbar />
+        <Menu />
+        <Cal />
+        <Times />
+      </div>
     </div>
   );
 }
