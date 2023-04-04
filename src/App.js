@@ -3,6 +3,7 @@ import Navbar from "./components/Nav";
 
 import Cal from "./components/Cal";
 import Times from "./components/times";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Menu />
         <Cal />
         <Times />
+        <Footer />
       </div>
     </div>
   );
