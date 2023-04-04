@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const Dayes = ({ item, activator, index }) => {
+const Dayes = (item, activator, index) => {
   const { weekDaye, date, month, friday } = item.items;
   console.log(activator);
   return (
