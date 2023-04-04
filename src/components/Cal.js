@@ -19,7 +19,7 @@ const Cal = () => {
             }}
             key={index}
           >
-            <Dayes props={(item, index, activator)} />
+            <Dayes activator={activator} items={item} index={0} />
           </div>
         ))}
       </div>
