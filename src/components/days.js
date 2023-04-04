@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 
-const Dayes = (item, activator, index) => {
+const Dayes = ({ item, activator, index }) => {
   const { weekDaye, date, month, friday } = item.items;
-  console.log(index);
+  console.log(activator);
   return (
     <div
       className={` rounded-lg text-gray-700 transition-all delay-75 flex flex-col justify-center items-center cursor-pointer px-2 py-3.5 hover:bg-green-500 hover:text-white  ${
