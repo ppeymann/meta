@@ -3,8 +3,8 @@ import React from "react";
 const Footer = () => {
   return (
     <>
-      <div className=" flex container pb-3 mx-5 w-full  justify-between items-start rightSide ">
-        <ul className="flex items-center md:flex-row flex-col md:w-8/12 gap-2">
+      <div className="border-t-2 flex container pb-3 md:mx-5 w-full  justify-between items-start rightSide ">
+        <ul className="flex md:items-center pt-3 flex-col md:flex-row w-8/12 gap-2">
           <li className="text-xs md:border-l-2 hover:text-green-500 pl-2 transition-all ease-linear delay-75 cursor-pointer border-gray-300 border-dotted">
             درباره ما
           </li>
@@ -21,7 +21,7 @@ const Footer = () => {
             تماس باما
           </li>
         </ul>
-        <div className="leftSide flex flex-col items-start    ">
+        <div className="leftSide flex flex-col items-start pt-3">
           <span className=" cursor-pointer w-full delay-75 transition-all ease-linear hover:text-green-500">
             همراه ما باشید
           </span>

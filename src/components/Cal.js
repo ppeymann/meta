@@ -4,7 +4,7 @@ import Dayes from "./days";
 import calender from "../db";
 
 const Cal = () => {
-  const [activator, setActivator] = useState(0);
+  const [activator, setActivator] = useState(null);
   return (
     <div className="container pt-10 mx-auto w-full">
       <div className="titles pb-2 mb-5 flex gap-2 items-center border-b-2 border-dotted ">
@@ -14,12 +14,12 @@ const Cal = () => {
       <div className="w-full grid gap-2.5 grid-cols-4 lg:grid-cols-6 xl:grid-cols-12">
         {calender.map((item, index) => (
           <div
+            key={index}
             onClick={() => {
               setActivator(index);
             }}
-            key={index}
           >
-            <Dayes activator={activator} items={item} index={0} />
+            <Dayes items={item} indexs={index} activator={activator} />
           </div>
         ))}
       </div>
